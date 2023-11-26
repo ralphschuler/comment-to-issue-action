@@ -9,15 +9,35 @@ branding:
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
-    required: true
-    default: '1000'
+  github-token:
+    description: 'The GitHub token to use for authentication'
+    required: false
+    default: ${{ secrets.GITHUB_TOKEN }}
+  github-repository:
+    description: 'The GitHub repository to use'
+    required: false
+    default: ${{ github.repository }}
+  github-owner:
+    description: 'The GitHub owner to use'
+    required: false
+    default: ${{ github.repository_owner }}
+  source-directory:
+    description: 'The source directory to use'
+    required: false
+    default: './'
+  file-extension:
+    description: 'The file extension to use'
+    required: false
+    default: '.ts'
+  comment-prefixes:
+    description: 'The comment prefixes to use'
+    required: false
+    default: 'TODO,FIXME,BUG,NOTE,OPTIMIZE,IDEA,HACK,REVIEW,DEBUG,QUESTION,WARNING,ERROR,INFO'
 
 # Define your outputs here.
-outputs:
-  time:
-    description: 'Your output description here'
+# outputs:
+#   time:
+#     description: 'Your output description here'
 
 runs:
   using: node20
