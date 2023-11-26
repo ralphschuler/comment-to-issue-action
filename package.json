@@ -1,16 +1,16 @@
 {
-  "name": "typescript-action",
+  "name": "comment-to-issue-action",
   "description": "GitHub Actions TypeScript template",
   "version": "0.0.0",
   "author": "",
   "private": true,
-  "homepage": "https://github.com/actions/typescript-action",
+  "homepage": "https://github.com/actions/comment-to-issue-action",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/actions/comment-to-issue-action.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/typescript-action/issues"
+    "url": "https://github.com/actions/comment-to-issue-action/issues"
   },
   "keywords": [
     "actions",
